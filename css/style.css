@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}   
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+
+/* navbar */
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(43, 40, 40);
+    color: white;
+    padding: 1rem;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+    background-color: grey;
+    border-radius: 5px;
+}
+
+/* Header */
+#my-header {
+    height: 100vh;
+    background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+#my-header .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%; /* 100% of the container, i.e. my-header */
+    padding: 0 2rem;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+#my-header .header-content .readmore-btn {
+    display: inline-block;
+    color: white;
+    background-color: grey;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#my-header .header-content .readmore-btn:hover{
+    background-color: rgb(68, 67, 67);
+}
+
+
+/* Utility classes */
+.btn-dark {
+    background: grey;
+    color: white;
+}
+
+
+.text-primary {
+    color: grey;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.bg-primary {
+    background-color: grey;
+    color: white;
+}
+
+.bg-dark {
+    background-color: #333;
+    color: white;
+}
+
+.bg-light {
+    background-color: white;
+    color: #333;
+}
+
+/* Utility classes for headings */
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+/* Utility class for paragraph */
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Utility classes for padding */
+/* padding y-axis */
+.py-1 { padding: 1.5rem 0;}
+.py-2 { padding: 2rem 0;}
+.py-3 { padding: 3rem 0;}
+
+/* padding both x and y-axis */
+.p-1 { padding: 1.5rem;}
+.p-2 { padding: 2rem;}
+.p-3 { padding: 3rem;}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
+
+/* Section: What We Do */
+#what .items-container {
+    display: flex;
+    padding: 1rem;
+}
+
+#what .items-container .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items-container .item i { /* Section: What icons */
+    background-color: grey;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Section: Who We Are */
+/* We didn't create a container in this section since we want the content to span across the whole view width 
+So we just set the whole section as display:flex
+*/
+
+#who {
+    display: flex;
+}
+
+#who div {
+    flex: 1; /*So that both the divs will have the same size */
+}
+
+#who .who-img {
+    background: url(../img/people.jpg) no-repeat center center/cover;
+}
+
+
+/* Section: Clients */
+#clients .items-container{
+    display: flex;
+}
+
+#clients .items-container .item img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+/* Section: Contact */
+#contact {
+    display: flex;
+}
+
+#contact .contact-form, #contact .map {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#contact .contact-form #submit-btn:hover {
+    background-color: rgb(112, 112, 112);
+}
+
+#contact .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+#my-footer {
+    background-color: rgb(231, 230, 230);
+}
